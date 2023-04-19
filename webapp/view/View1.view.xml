@@ -1,10 +1,19 @@
-<mvc:View controllerName="com.sap.pollutiontracker.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content>
-        
-        <Button id="as" text="all"/>
-        </content>
-    </Page>
+<mvc:View 
+controllerName="com.sap.pollutiontracker.controller.View1" 
+height="100%"
+ xmlns:mvc="sap.ui.core.mvc" 
+ 
+ xmlns="sap.f">
+
+ <FlexibleColumnLayout id="pollutionID">
+
+    <beginColumnPages>
+        <mvc:XMLView id="BeginView" viewName="com.sap.pollutiontracker.view.Master" ></mvc:XMLView>
+    </beginColumnPages>
+ 
+ 
+ </FlexibleColumnLayout>
+ 
+
+
 </mvc:View>

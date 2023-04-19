@@ -1,0 +1,45 @@
+<mvc:View controllerName="com.sap.pollutiontracker.controller.Master" height="100%" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns="sap.m">
+  
+    <f:DynamicPage id="_IDGenDynamicPage1" toggleHeaderOnTitleClick="false">
+    <!-- DynamicPage Title -->
+        <f:title>
+            <f:DynamicPageTitle id="_IDGenDynamicPageTitle1">
+                <f:heading>
+                    <Title id="_IDGenTitle1" text="Countries Wise Pollution " wrapping="true" class="sapUiTinyMarginEnd"/>
+                </f:heading>
+            </f:DynamicPageTitle>
+        </f:title>
+        <!-- Dynamic Page Content -->
+        <f:content>
+
+            <VBox id="vboxID" fitContainer="true">
+
+                <Table id="countriesPollutionTable" 
+                 width="auto" 
+                 items="{countries>/}">
+                    <columns>
+                        <Column id="_IDGenColumn1" width="12rem">
+                            <Text id="Count_ID" text="Country"/>
+                        </Column>
+                        <Column id="_IDGenColumn2" hAlign="End" width="14rem">
+                            <Text id="AQI_ID" text="AQI"/>
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem id="_IDGenColumnListItem1" type="Navigation">
+                            <cells>
+
+                                <ObjectIdentifier id="_IDGenObjectIdentifier1" title="{countries>country}"  text="{countries>AQI}"/>
+                               	
+                                <ObjectNumber id="_IDGenObjectNumber1" number="{countries>AQI}" />
+                              
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+
+                </Table>
+            </VBox>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>
