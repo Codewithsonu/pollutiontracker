@@ -66,6 +66,8 @@
         }
       ]
     },
+
+
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",
@@ -76,6 +78,7 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
+      
       "routes": [
         {
           "name": "RouteView1",
@@ -95,6 +98,9 @@
         }
       }
     },
+
+
+
     "rootView": {
       "viewName": "com.sap.pollutiontracker.view.App",
       "type": "XML",

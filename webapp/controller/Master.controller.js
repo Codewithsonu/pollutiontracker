@@ -21,6 +21,12 @@ sap.ui.define([
                 console.log(countriesModelData);
             
         
+        },
+        OnCountryPress:function(oEvent){
+            console.log("On country Press ");
+            
+
+
         }
 
 	});
