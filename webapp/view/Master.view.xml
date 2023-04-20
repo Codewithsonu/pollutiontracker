@@ -6,6 +6,8 @@
     xmlns="sap.m"
     busyIndicatorDelay="3"
     >
+   <App id="MasterAppId">
+    
         <f:DynamicPage id="_IDGenDynamicPage1" toggleHeaderOnTitleClick="false">
         <!-- DynamicPage Title -->
             <f:title>
@@ -51,5 +53,5 @@
             </f:content>
         </f:DynamicPage>
 
-
+</App>
 </mvc:View>

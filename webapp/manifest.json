@@ -75,10 +75,10 @@
         "async": true,
         "viewPath": "com.sap.pollutiontracker.view",
         "controlAggregation": "pages",
-        "controlId": "app",
+        "controlId": "MasterAppId",
         "clearControlAggregation": false
       },
-      
+
       "routes": [
         {
           "name": "RouteView1",
@@ -102,10 +102,10 @@
 
 
     "rootView": {
-      "viewName": "com.sap.pollutiontracker.view.App",
+      "viewName": "com.sap.pollutiontracker.view.Master",
       "type": "XML",
       "async": true,
-      "id": "App"
+      "id": "MasterAppId"
     }
   }
 }

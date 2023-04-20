@@ -7,8 +7,14 @@
  <FlexibleColumnLayout id="pollutionID">
 
     <beginColumnPages>
-        <mvc:XMLView id="BeginView" viewName="com.sap.pollutiontracker.view.Master" ></mvc:XMLView>
+        <mvc:XMLView id="BeginView" viewName="com.sap.pollutiontracker.view.Master" > </mvc:XMLView>
     </beginColumnPages>
+
+    <midColumnPages>
+    
+        <mvc:XMLView id="MidViewID" viewName="com.sap.pollutiontracker.view.Detail"> </mvc:XMLView>
+    
+    </midColumnPages>
 
     
  
