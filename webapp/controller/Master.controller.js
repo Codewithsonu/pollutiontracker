@@ -22,16 +22,23 @@ sap.ui.define([
             this.getView().setModel(countriesModel, 'countries');
 
             var countriesModelData = this.getView().getModel('countries')
+
             console.log(countriesModelData);
+
+            
         },
 
         OnCountryPress: function(oEvent) {
+
 
             console.log("On country Press  event is triggered ");
 
             var getFCLRef = this.getView().getParent().getParent();
 
             getFCLRef.setLayout(LayoutType.TwoColumnsMidExpanded);
+            
+
+
 
         },
 
