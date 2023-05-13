@@ -66,41 +66,48 @@
         }
       ]
     },
-
-
     "routing": {
       "config": {
-        "routerClass": "sap.m.routing.Router",
+        "routerClass": "sap.f.routing.Router",
         "viewType": "XML",
         "async": true,
         "viewPath": "com.sap.pollutiontracker.view",
         "controlAggregation": "pages",
-        "controlId": "MasterAppId",
+        "controlId": "pollutionID",
         "clearControlAggregation": false
       },
-
       "routes": [
         {
-          "name": "RouteView1",
-          "pattern": ":?query:",
+          "pattern": ":layout",
+          "name": "master",
           "target": [
-            "TargetView1"
+            "master",
+            "detail"
+          ]
+        },
+        {
+          "pattern": "detail/{country}/{layout}",
+          "name": "detail",
+          "target": [
+            "master",
+            "detail"
           ]
         }
       ],
       "targets": {
-        "TargetView1": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "View1",
-          "viewName": "View1"
+        
+        "master": {
+          "controlAggregation": "beginColumnPages",
+          "viewId": "master",
+          "viewName": "Master"
+        },
+        "detail": {
+          "controlAggregation": "midColumnPages",
+          "viewId": "detail",
+          "viewName": "Detail"
         }
       }
     },
-
-
-
     "rootView": {
       "viewName": "com.sap.pollutiontracker.view.Master",
       "type": "XML",
